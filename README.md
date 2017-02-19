@@ -1,4 +1,3 @@
-[TOC]
 # iOS-Animation
 
 ## 夯实基础-CALayer

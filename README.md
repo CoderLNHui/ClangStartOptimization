@@ -47,6 +47,12 @@
 - `CASpringAnimation 弹簧动画`
 - `CAKeyframeAnimation 关键帧动画`
 - `CAAnimationGroup 动画组`
+
+
+### 其它
+- `系统自带的 animationImages`
+- `UIView代码块加Block`
+- `UIView [begin commit]模式`
 - `物理动效(重力、碰撞、吸附、推力、关联)`
  - `UIGravityBehavior 重力`
  - `UICollisionBehavior 碰撞`
@@ -61,11 +67,6 @@
  - `POPSpringAnimation 弹簧效果`
  - `POPSpringAnimation 飞入效果`
  - `支持自定义动画`
-
-### 其它
- - `系统自带的 animationImages`
- - `UIView代码块加Block`
- - `UIView [begin commit]模式`
 
 ### Transform field value key paths
  

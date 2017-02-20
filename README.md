@@ -39,7 +39,8 @@
 
 
 ## 活学活用-Core Animation
- Core Animation是iOS和macOS平台上负责图形渲染与动画的基础框架。Core Animation可以作用与动画视图或者其他可视元素，为你完成了动画所需的大部分绘帧工作。你只需要配置少量的动画参数（如开始点的位置和结束点的位置）即可使用Core Animation的动画效果。Core Animation将大部分实际的绘图任务交给了图形硬件来处理，图形硬件会加速图形渲染的速度。这种自动化的图形加速技术让动画拥有更高的帧率并且显示效果更加平滑，不会加重CPU的负担而影响程序的运行速度。
+`Core Animation`是iOS和macOS平台上负责图形渲染与动画的基础框架。
+Core Animation 可以作用与动画视图或者其他可视元素，为你完成了动画所需的大部分绘帧工作。你只需要配置少量的动画参数（如开始点的位置和结束点的位置）即可使用 Core Animation 的动画效果。Core Animation 将大部分实际的绘图任务交给了图形硬件来处理，图形硬件会加速图形渲染的速度。这种自动化的图形加速技术让动画拥有更高的帧率并且显示效果更加平滑，不会加重CPU的负担而影响程序的运行速度。
 
 ### Core Animation 框架
 - `CATransition 转场动画`
@@ -94,8 +95,8 @@
 ![iOS常用动画活用.gif](http://upload-images.jianshu.io/upload_images/2230763-030f2c70525c831a.gif?imageMogr2/auto-orient/strip)
 
 
-
-
+## 后续
+「学习总结，一劳永逸」
 
 
 

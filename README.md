@@ -15,9 +15,9 @@
 | cornerRadius / masksToBounds   | 圆角半径 / 属性为YES才显示圆角效果 | 
 
 
-## Core Animation
+### Core Animation
 
-### Core Animation 框架
+**Core Animation 框架**
 - `CATransition 转场动画`
 - `CABasicAnimation 基础动画`
 - `CASpringAnimation 弹簧动画`
@@ -25,7 +25,7 @@
 - `CAAnimationGroup 动画组`
 
 
-### 其它
+**其它动画**
 - `系统自带的 animationImages`
 - `UIView代码块加Block`
 - `UIView [begin commit]模式`

@@ -1,29 +1,6 @@
-# iOS-Animation
+## iOS-Animation
 
-## 夯实基础-CALayer
-### CALayer的介绍
-- 个人理解，CALayer 是定义在 QuartzCore 框架中，从下图可以看出 UIView内部定义了一个CALayer对象，它是用来在屏幕上显示内容展示的矩形区域；
-- CALayer是个与UIView很类似的概念，同样有backgroundColor、frame等相似的属性，我们可以将UIView看做一种特殊的CALayer。但实际上UIView是对CALayer封装，在CALayer的基础上再添加交互功能。UIView的显示必须依赖于CALayer。我们同样可以跟新建view一样新建一个layer，然后添加到某个已有的layer上，同样可以对layer调整大小、位置、透明度等。**layer可以有两种用途**：一是对view相关属性的设置，包括圆角、阴影、边框等参数；二是实现对view的动画操控。因此对一个view进行动画，本质上是对该view的.layer进行动画操作；
-
-### UIView和CALayer的区别和选择
-- **UIView和CALayer区别**
- - 在创建UIView对象时，UIView内部会自动创建一个图层(即`CALayer对象`)，CALayer 在背后提供内容的绘制和显示；两者都有树状层级结构，`layer 内部有 SubLayers，View 内部有 SubViews.但是 Layer 比 View 多了个AnchorPoint(锚点)`。
-
- - 当UIView需要显示到屏幕上时（`UIView 做为 Layer 的 CALayerDelegate，View 显示内容由CALayer 的 display`），会调用drawRect:方法进行绘图，并且会将所有内容绘制在自己的图层上，绘图完毕后，系统会将图层拷贝到屏幕上，于是就完成了UIView的显示。
-换句话说，`UIView本身不具备显示的功能，是因为它内部的图层（CALayer）才有显示功能`
-
- - Layer 的 frame 是由它的 bounds、position、anchorPoint 和 transform 共同决定的；View 的 frame 只是简单的返回 Layer的 frame，同样 View 的 bounds 和 center 也是返回 Layer 的一些属性。
-
- - UIView 多了一个事件处理的功能,也就是说 UIView 可以处理用户的触摸事件,而 CALayer 不可以。
-
-- UIView和CALayer选择
- - 通过CALayer，也能做出和 UIImageView 一样的效果，相比较UIView多了一个事件处理的功能；
-所以，如果显示出来的东西需要跟用户进行交互的话，用UIView；如果不需要进行交互，用UIView和CALayer都可以；
-
- - 当然，CALayer 的性能会高一些，因为它少了事件处理的功能，更轻量级(实际开发中还是建议使用UIView,可扩展性强)；
-
-
-### CALayer的基本使用
+### CALayer
 - CALayer的常用属性
 
 | 属性 | 描述 |
@@ -38,9 +15,7 @@
 | cornerRadius / masksToBounds   | 圆角半径 / 属性为YES才显示圆角效果 | 
 
 
-## 活学活用-Core Animation
-`Core Animation`是iOS和macOS平台上负责图形渲染与动画的基础框架。
-Core Animation 可以作用与动画视图或者其他可视元素，为你完成了动画所需的大部分绘帧工作。你只需要配置少量的动画参数（如开始点的位置和结束点的位置）即可使用 Core Animation 的动画效果。Core Animation 将大部分实际的绘图任务交给了图形硬件来处理，图形硬件会加速图形渲染的速度。这种自动化的图形加速技术让动画拥有更高的帧率并且显示效果更加平滑，不会加重CPU的负担而影响程序的运行速度。
+## Core Animation
 
 ### Core Animation 框架
 - `CATransition 转场动画`
@@ -95,8 +70,6 @@ Core Animation 可以作用与动画视图或者其他可视元素，为你完�
 ![iOS常用动画活用.gif](http://upload-images.jianshu.io/upload_images/2230763-030f2c70525c831a.gif?imageMogr2/auto-orient/strip)
 
 
-## 后续
-「学习总结，一劳永逸」
 
 
 

@@ -1,0 +1,14 @@
++[ViewController load]
+_main
+-[AppDelegate application:didFinishLaunchingWithOptions:]
+-[AppDelegate application:configurationForConnectingSceneSession:options:]
+-[SceneDelegate setWindow:]
+-[SceneDelegate scene:willConnectToSession:options:]
+-[SceneDelegate window]
+-[ViewController viewDidLoad]
+_testCFunc
+_LBBlock_block_invoke
+-[ViewController testOCFunc]
+-[SceneDelegate sceneWillEnterForeground:]
+-[SceneDelegate sceneDidBecomeActive:]
+-[ViewController touchesBegan:withEvent:]
